@@ -1,3 +1,4 @@
+@volume
 Feature: User is able to convert Volume units
 
   Background:
@@ -9,7 +10,7 @@ Feature: User is able to convert Volume units
     When I swipe in the menu
     And I see app menu
 
-  @wip
+
   Scenario Outline:
     When I swipe in the menu
     And I select "<target>" from menu
