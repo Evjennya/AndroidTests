@@ -34,3 +34,19 @@ def select_menu_item(value)
   end
 
 end
+
+def select_from_unit(value)
+  if exists {find_element(id: "radio_group_from").find_element(xpath: "//android.widget.RadioButton[@text='#{value}']")}
+    find_element(id: "radio_group_from").find_element(xpath: "//android.widget.RadioButton[@text='#{value}']").click
+  else
+    fail ("Element #{value} was not found in radio group")
+  end
+end
+
+def select_to_unit(value)
+  if exists {find_element(id: "radio_group_to").find_element(xpath: "//android.widget.RadioButton[@text='#{value}']")}
+    find_element(id: "radio_group_to").find_element(xpath: "//android.widget.RadioButton[@text='#{value}']").click
+  else
+    fail ("Element #{value} was not found in radio group")
+  end
+end
