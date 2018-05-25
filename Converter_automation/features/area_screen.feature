@@ -1,4 +1,4 @@
-
+@area
 Feature: User is able to convert area units
 
   Background:
@@ -16,7 +16,7 @@ Feature: User is able to convert area units
     And I see "Sq Metre" in To header
     When I click on Swap button
     Then I see "Sq Metre" in From header
-    And I see "Sq Metre" in To header
+    And I see "Sq Kilometre" in To header
 
 
   Scenario Outline: User is able to convert default units
@@ -37,7 +37,7 @@ Feature: User is able to convert area units
       And I press "12" on soft keyboard
       Then I get "12000000" in To field
 
-  @area
+
     Scenario:
       When I select "Hectare" from left column
       Then I see "Hectare" in From header

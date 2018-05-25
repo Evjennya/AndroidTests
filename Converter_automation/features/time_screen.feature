@@ -1,4 +1,4 @@
-@Time
+@time
 
 Feature: User is able to convert Time units
 
